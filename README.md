@@ -22,4 +22,9 @@ python train_classifier.py --exp_dir PATH_TO_SAVE_CHECKPOINT
 
 ## SkecthyCOCOSeg dataset
 You can get the dataset at [here](https://drive.google.com/file/d/17KTH37dxQrVl1APAkobC8L-B-c5gJ0jH/view?usp=drive_link)
-We provide the 256*256 resolution version,if you need other resolutions,please contact us.
+We provide the 256*256 resolution version,if you need other resolutions,please contact us(dxin1111@bupt.ed.cn)
+
+## Related Resources
+Thanks for the wanderful work ControlNet [controlnet](https://github.com/lllyasviel/ControlNet).
+We also want to thank Baranchuk's work [LABEL-EFFICIENT SEMANTIC SEGMENTATION](https://github.com/yandex-research/ddpm-segmentation)
+Thanks Conghui's work [Sketch-a-Segmenter](https://ieeexplore.ieee.org/abstract/document/9216574)
