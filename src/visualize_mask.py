@@ -16,7 +16,7 @@ def save_image(original_image,mask_image,save_path):
 def get_color(image_path,seg_path):
     image1 = Image.open(image_path)
     mask = np.load(seg_path)
-    image2 = image2 = np.zeros((256,256,3))
+    image2 = np.zeros((256,256,3))
     ## 设置分割图的颜色 rgb
     image2[:,:,0] = np.where(mask==1,255,255)
     image2[:,:,1] = np.where(mask == 1,255,255)
@@ -40,7 +40,7 @@ if __name__ =="__main__":
     img_root_path = "/root/code_dir/ControlNet_Seg/datasets/PASCAL/pascal_voc_256/photo"
     save_path = "/root/code_dir/ControlNet_Seg/exp_result/exp23_voc/visualization"
     gt_path = "/root/code_dir/ControlNet_Seg/datasets/PASCAL/pascal_voc_256/anno_npy"
-    pre_path = "/root/code_dir/ControlNet_Seg/exp_result/exp23_voc/predictions"
+    pre_path = "/root/code_dir/ControlNet_Seg/exp_result/cross-dataset/quick_draw"
     for _,dirs,_ in os.walk(img_root_path):
         for dir in dirs:
             dir_path = os.path.join(img_root_path,dir)
